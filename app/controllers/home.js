@@ -33,12 +33,12 @@ exports.logOut = function(req, res, next) {
 
 exports.home = function(req, res) {
   var name=req.user.name;
-
+ var email=req.user.mail;
   res.render('home.ejs', {
     error: req.flash("error"),
     success: req.flash("success"),
     session: req.session,
-    name:name,
+    user:name,email:email
 
   });
 

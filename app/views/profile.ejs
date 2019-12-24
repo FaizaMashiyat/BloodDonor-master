@@ -64,7 +64,7 @@
                                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                       <a class="dropdown-item" href="/finddonor">Find Donors</a>
                                       <a class="dropdown-item" href="/logout">Log Out</a>
-                                      <a class="dropdown-item" href="/chat">Edit Profile</a>
+                                      
                                       
                                   </div>
                               </li>
@@ -74,13 +74,11 @@
                               <li class="nav-item">
                                   <a class="nav-link" href="/logout">Log Out</a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/profile">Edit Profile</a>
-                            </li>
+                              
                           </ul>
                           
       </div>
-  </div> 
+  </div>
 </div>
 </header>
 <!-- ***** Header Area End ***** -->
@@ -89,24 +87,46 @@
 </section>
 <!-- ***** Breadcumb Area End ***** -->
 
-<div class="container" style="margin-top:50px">
-  <h1>Welcome <%=user%></h1>
-  <div class="row">
-  <h4>Your email is <%=email%></h4>
+<!-- form area-->
+<form>
+    <div class="form-group">
+      <label for="exampleFullName">Full name</label>
+      <input type="fullname" class="form-control" id="exampleInputFullname" aria-describedby="fullnameHelp" placeholder="Enter full name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputAddress">Address</label>
+      <input type="address" class="form-control" id="exampleInputAddress" placeholder="Address">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputDistrict">District</label>
+      <input type="District" class="form-control" id="exampleInputDistrict" placeholder="District">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputCountry">Country</label>
+      <input type="country" class="form-control" id="exampleInputCountry" placeholder="Country">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputBloodgroup">Blood group</label>
+      <input type="bloodgroup" class="form-control" id="exampleInputBloodgroup" placeholder="Bloodgroup">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputLastgiven">Last given</label>
+      <input type="lastgiven" class="form-control" id="exampleInputLastgiven" placeholder="Lastgiven">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputMedicalissue">Medical issue</label>
+      <input type="medicalisuue" class="form-control" id="exampleInputMedicalissue" placeholder="Medicalissue">
+    </div>
+    
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 
-  </div>
-</div>
+<!-- form area-->
 
-
-  </div>
-</div>
-
-<div class="container" style="margin-top:50px">
-  <h3>Welcome Home</h3>
-  <div class="row">
-
-  </div>
-</div>
 
 <!-- jQuery (Necessary for All JavaScript Plugins) -->
 <script src="/js/jquery/jquery-2.2.4.min.js"></script>

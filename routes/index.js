@@ -27,11 +27,8 @@ router.get('/elements',Index.elements);
 router.get('/indexicons',Index.indexicons);
 
 
-router.get('/chat',Index.chat);
-
-
 router.get('/logout',Index.logout);
-
+router.get('/profile',Index.profile)
 
 router.get('/finddonor',Index.finddonor);
 
