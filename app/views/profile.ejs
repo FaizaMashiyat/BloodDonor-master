@@ -89,70 +89,104 @@
  <section class="breadcumb-area bg-img gradient-background-overlay" style="background-image: url(img/bg-img/breadcumb1.jpg);">
 </section>
 <!-- ***** Breadcumb Area End ***** -->
-
-<!-- form area-->
-<form>
-    <div class="form-group">
-      <label for="exampleFullName">Full name</label>
-      <input type="fullname" class="form-control" id="exampleInputFullname" aria-describedby="fullnameHelp" placeholder="Enter full name">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputAddress">Address</label>
-      <input type="address" class="form-control" id="exampleInputAddress" placeholder="Address">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputDistrict">District</label>
-      <input type="District" class="form-control" id="exampleInputDistrict" placeholder="District">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputCountry">Country</label>
-      <input type="country" class="form-control" id="exampleInputCountry" placeholder="Country">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputBloodgroup">Blood group</label>
-      <input type="bloodgroup" class="form-control" id="exampleInputBloodgroup" placeholder="bloodgroup">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Choose Blood Group
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">A+</a>
-          <a class="dropdown-item" href="#">A-</a>
-          <a class="dropdown-item" href="#">AB+</a>
-          <a class="dropdown-item" href="#">AB-</a>
-          <a class="dropdown-item" href="#">B+</a>
-          <a class="dropdown-item" href="#">B-</a>
-          <a class="dropdown-item" href="#">O+</a>
-          <a class="dropdown-item" href="#">O-</a>
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
       
     </div>
-    
-    
-        <form action="/action_page.php">
-          Lastgiven:<input type="date" name="lastgiven">
-          <input type="submit">
-          </form>
+    <div class="col-sm-6">
+      <!-- form area-->
+<form>
+  <div class="form-group"></div>
+  <div class="form-group">
+    <label for="exampleFullName">Full name</label>
+    <input type="fullname" class="form-control" id="fullname" aria-describedby="fullnameHelp" placeholder="Enter full name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAddress">Address</label>
+    <input type="text" class="form-control" id="address" placeholder="Address">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputDistrict">District</label>
+    <input type="District" class="form-control" id="district" placeholder="District">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputCountry">Country</label>
+    <input type="country" class="form-control" id="country" placeholder="Country">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleInputbloodgroup">BloodGroup</label>
+    <select class=" form-control custom-select" id="bloodgroup">
+      <option selected>Choose your blood group...</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="others">others</option>
+    </select>
+  </div>
+  
+  
+      <form action="/action_page.php">
+        Lastgiven:<input type="date" name="lastgiven">
+        <input type="submit">
+        </form>
 
-          <p><strong>Note:</strong>type="date" is not supported in Safari on Internet Explorer 11 (or earlier).</p>
+        <p><strong>Note:</strong>type="date" is not supported in Safari on Internet Explorer 11 (or earlier).</p>
 
-          </body>
-          </html>
+        </body>
+        </html>
 
-    <div class="form-group">
-      <label for="exampleInputMedicalissue">Medical issue</label>
-      <input type="medicalisuue" class="form-control" id="exampleInputMedicalissue" placeholder="Medicalissue">
+  <div class="form-group">
+    <label for="exampleInputMedicalissue">Medical issue</label>
+    <textarea class="form-control rounded-0" id="medicalissue" rows="6" placeholder="input details medical problems"></textarea>
+  </div>
+  
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<!-- form area-->    
+      
     </div>
-    
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="col-sm-3">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  </div>
+</div>
 
-<!-- form area-->
+    <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> Faiza.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 <!-- jQuery (Necessary for All JavaScript Plugins) -->
