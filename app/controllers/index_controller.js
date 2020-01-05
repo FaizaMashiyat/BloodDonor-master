@@ -32,9 +32,9 @@ exports.finddonor = function(req, res, next){
 	res.render("finddonor");
 };
 
-exports.logout = function(req, res, next){
-	res.render("logout");
-};
+// exports.logout = function(req, res, next){
+// 	res.render("logout");
+// };
 exports.profile = function(req, res, next){
 	res.render("profile");
 };

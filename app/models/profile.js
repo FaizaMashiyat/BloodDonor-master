@@ -8,7 +8,6 @@ var profileSchema = mongoose.Schema({
     district: String,
     country: String,
     bloodgroup:String,
-    
     lastgiven:String,
     medicalissue:String
 });
